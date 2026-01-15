@@ -1,0 +1,43 @@
+{{FrontSide}}
+
+<hr id=answer>
+
+<div class="meaning">{{Meaning}}</div>
+
+<div class="info">{{Note}}</div>
+
+<div class="info">{{Sentence}}</div>
+<div class="help">{{SentenceMeaning}}</div>
+
+<div id="takoboto-link" class="link"></div>
+
+<script>
+function extractUrl(rawLink) {
+  if (!rawLink) return null;
+  const match = rawLink.match(/S\.browser_fallback_url=([^;]+)/);
+  return match?.[1] ? decodeURIComponent(match[1]) : null;
+}
+
+function initialize() {
+  const reading = document.getElementById("reading");
+  reading.style.visibility = "visible";
+
+  const link = '{{Link}}';
+
+  if (link) {
+    const userAgent = navigator.userAgent;
+    const isAndroid = /android/i.test(userAgent);
+
+    const extractedLink = !isAndroid ? extractUrl(link) : link;
+
+    if (extractedLink) {
+      const linkElement = document.getElementById('takoboto-link');
+      if (linkElement && extractedLink) {
+        linkElement.innerHTML = `<a href="${extractedLink}" target="_blank">Open in Takoboto</a>`;
+      }
+    }
+  }
+}
+
+initialize();
+</script>

@@ -1,0 +1,30 @@
+.card {
+    padding-top: 20px;
+    font-family: serif;
+    text-align: center;
+    color: black;
+    background-color: white;
+}
+
+.word {
+  font-size: 60px;
+}
+
+.help {
+  font-size: 16px;
+  color: gray;
+}
+
+.meaning {
+  font-size: 24px;
+}
+
+.info {
+  font-size: 24px;
+  margin-top: 1ex;
+}
+
+.link {
+  font-size: 16px;
+  margin-top: 1ex;
+}

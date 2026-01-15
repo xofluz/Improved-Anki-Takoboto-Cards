@@ -1,0 +1,23 @@
+<div class="word" id="word">{{Japanese}}</div>
+<div class="help" id="reading" style="visibility: hidden">{{Reading}}</div>
+<div id="note"></div>
+
+<script>
+function initialize() {
+  const word = document.getElementById("word");
+  const reading = document.getElementById("reading");
+
+  const note_field = "{{Note}}"
+  const reading_visible_default = note_field.includes("Usually written using kana alone");
+  reading.style.visibility = reading_visible_default ? "visible" : "hidden";
+
+  let reading_visible = reading_visible_default;
+  word.addEventListener("click", () => {
+    console.log(reading_visible)
+    reading_visible = !reading_visible;
+    reading.style.visibility = reading_visible ? "visible" : "hidden";
+  });
+}
+
+initialize();
+</script>
