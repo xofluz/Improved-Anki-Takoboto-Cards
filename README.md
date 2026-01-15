@@ -20,3 +20,9 @@ To use my cards instead of the default Takoboto cards, in the anki browser under
 This opens a dialog, where you can select each card type and if you're editing the front or back side or the styling. Copy-paste the content of the provided files into the respective fileds and save when all files are pasted in.
 
 This will update all existing cards to use this new style and new notes added through the Takoboto app will create cards with this style.
+
+**TODO:** Insert guide pictures
+
+## Examples
+
+**TODO:** Insert example pictures
