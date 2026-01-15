@@ -11,13 +11,13 @@ The changes are:
 
 ## Usage
 
-Takoboto creates its own note type called `jp.takoboto` with default cards for Japanese -> English and English -> Japanese.
+Takoboto creates its own note type called `jp.takoboto` with default cards for Japanese > English and English > Japanese.
 
 The easiest way to edit the card styles is on the Anki desktop app.
 
-To use my cards instead of the default Takoboto cards, in the anki browser under `Note Types`, select the `jp.takoboto` note. Click the `Cards…` button.
+To use my cards instead of the default Takoboto cards, in the Anki browser under `Note Types`, select the `jp.takoboto` note. Click the `Cards…` button.
 
-This opens a dialog, where you can select each card type and if you're editing the front or back side or the styling. Copy-paste the content of the provided files into the respective fileds and save when all files are pasted in.
+This opens a dialog where you can select each card type (Japanese > English and English > Japanese), and whether you're editing the front, back or styling. Copy-paste the content of the provided files into the respective fields and save when all files are pasted in.
 
 This will update all existing cards to use this new style and new notes added through the Takoboto app will create cards with this style.
 
